@@ -1,38 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .App {
-  text-align: center;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #05182f;
+  height: 6em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar__left {
+  display: flex;
+  color: white;
+  width: 60%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__left ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__left ul li {
+  list-style: none;
+}
+.navbar__left ul li:hover {
+  list-style: none;
+  color: #e3e6ac;
+  transition: 0.2s;
+}
+
+.navbar__right {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+}
+
+.navbar__right .login-btn,
+.navbar__right .btn-primary,
+.dropdown-btn {
+  background-color: #e3e6ac;
+  color: black;
+  border: none;
+}
+
+.login-btn {
+  height: 2.4em;
+}
+
+.dropdown-btn:hover {
+  background-color: #0b5ed7;
+  color: white;
+  transition: 0.2s;
+}
+
+.logo {
+  width: 6em;
+  height: 6em;
+}
+
+.btn-danger,
+.btn-login,
+.btn-lang {
+  height: 60%;
+  font-size: 1.2rem;
+}
+
+.upper-page-pic {
+  height: 85vh;
+  background-image: url('./assets/imgs/fake\ gym\ photo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+.gym__features__section {
+  height: 20vh;
+  width: 100%;
+  background-color: rgb(36, 35, 35);
+}
+
+.gym-features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.gym-feature {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1em;
+}
+
+.gym-feature p {
+  margin: 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+svg {
+  font-size: 5rem;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pricing-section {
+  background-color: rgb(255, 255, 255);
+  margin: 5em 0;
+}
+
+.pricing__head h2 {
+  font-weight: 700;
+}
+
+.card {
+  width: 18em;
+}
+
+.pricing__card {
+  width: 20%;
+}
+
+.card__header {
+  background-color: #05182f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card__content {
+  border: 1px solid black;
+  border-radius: 0 0 0.3rem 0.3rem;
+}
+
+.card__devider {
+  border: 1px solid rgb(196, 191, 191);
+  width: 90%;
+  margin: auto;
+}
+
+.card__features,
+.card__membership__sec {
+  margin: auto;
+  width: 90%;
+}
+
+.card__features {
+  padding-top: 2em;
+}
+
+.card__feature {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+
+.card__membership__sec {
+  padding: 1em 0;
+}
+
+.card__container {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+
+.pricing__head {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+.buy-btn {
+  width: 5em;
+}
+
+.footer__logo {
+  height: 5em;
+  width: 5em;
+}
+
+footer {
+  background-color: #05182f;
+  color: white;
+  display: flex;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  margin: 1em;
+}
+
+.phone__number,
+.footer__email {
+  display: flex;
+}
+
+.phone__icon,
+.envelope__icon {
+  font-size: 1rem;
+  padding: 0.4em;
+}
+
+.insta__logo {
+  color: white;
+  margin: 0 1em 0 0.3em;
+}
+
+.insta__logo,
+.fb__logo {
+  height: 1.5em;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 2em;
+
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 5em;
+  align-items: center;
+}
+
+footer li {
+  list-style: none;
+  font-size: 1.5rem;
 }
