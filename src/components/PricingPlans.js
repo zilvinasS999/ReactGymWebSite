@@ -25,7 +25,7 @@ function PricingPlans() {
             <div className='card__devider'></div>
             <div className='card__membership__sec'>
               <h4 className='price'>24.99 &euro;/month </h4>
-              <button type='button' class='btn btn-primary buy-btn'>
+              <button type='button' className='btn btn-primary buy-btn'>
                 BUY
               </button>
             </div>
@@ -49,7 +49,7 @@ function PricingPlans() {
             <div className='card__devider'></div>
             <div className='card__membership__sec'>
               <h4 className='price'>35.99 &euro;/month </h4>
-              <button type='button' class='btn btn-primary buy-btn'>
+              <button type='button' className='btn btn-primary buy-btn'>
                 BUY
               </button>
             </div>
@@ -73,7 +73,7 @@ function PricingPlans() {
             <div className='card__devider'></div>
             <div className='card__membership__sec'>
               <h4 className='price'>29.99 &euro;/month </h4>
-              <button type='button' class='btn btn-primary buy-btn'>
+              <button type='button' className='btn btn-primary buy-btn'>
                 BUY
               </button>
             </div>

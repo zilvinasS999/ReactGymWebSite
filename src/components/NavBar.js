@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../assets/imgs/GymLogo2.webp';
 import { Link } from 'react-router-dom';
 
+
 function NavBar() {
   return (
     <header>
@@ -16,7 +17,9 @@ function NavBar() {
             <Link className='nav-link' to='/memberships'>
               <li>Memberships</li>
             </Link>
-            <li>Group Workouts</li>
+            <Link className='nav-link' to='/group'>
+              <li>Group Workouts</li>
+            </Link>
             <li>Schedule</li>
             <li>About Us</li>
             <li>Trainers</li>

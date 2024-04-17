@@ -12,7 +12,7 @@ import {
 function GymFeatures() {
   return (
     <section className='gym__features__section'>
-      <div class='gym-features'>
+      <div className='gym-features'>
         <div className='gym-feature'>
           <FontAwesomeIcon icon={faInfinity} className='feature-logo' />
           <p>Unlimited Gym Access</p>

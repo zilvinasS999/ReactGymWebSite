@@ -8,6 +8,10 @@
 
 .App {
   width: 100%;
+  background-color: #f1f1e2;
+}
+
+body {
 }
 
 header {
@@ -86,7 +90,7 @@ nav {
 }
 
 .upper-page-pic {
-  height: 85vh;
+  min-height: 85vh;
   background-image: url('./assets/imgs/fake\ gym\ photo.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,9 +103,12 @@ main {
 }
 
 .gym__features__section {
-  height: 20vh;
+  min-height: 20vh;
   width: 100%;
   background-color: rgb(36, 35, 35);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .gym-features {
@@ -110,6 +117,7 @@ main {
   justify-content: space-around;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
 
 .gym-feature {
@@ -156,8 +164,9 @@ svg {
 }
 
 .card__content {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 0 0 0.3rem 0.3rem;
+  background-color: white;
 }
 
 .card__devider {
@@ -201,6 +210,24 @@ svg {
   width: 5em;
 }
 
+.leaflet-container {
+  min-height: 70vh;
+}
+
+.cluster-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #1081e0;
+  transform: translate(-25%, -25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+}
+
 .footer__logo {
   height: 5em;
   width: 5em;
@@ -238,6 +265,7 @@ footer {
 .insta__logo,
 .fb__logo {
   height: 1.5em;
+  width: 1.5em;
 }
 
 .footer__nav {
